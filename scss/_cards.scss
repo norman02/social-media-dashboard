@@ -1,0 +1,8 @@
+.follower-Card-facebook {
+    @include card($facebook-blue);
+    margin-top: 2rem;
+}
+
+.overview-facebook {
+    @include overview($facebook-blue);
+}

@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <title>Social Media Dashboard</title>
 </head>
+
 <body>
-<main>
-<header>
-    <h1>Social Media Dashboard</h1>
-    <p>Total Followers: <span id="total-followers">0</span></p>
-    <div class="switcher">
-        <p>Dark Mode</p>
-        <div class="switch"></div>
-    </div>
-</header>
+    <main>
+        <header>
+            <h1>Social Media Dashboard</h1>
+            <p>Total Followers: <span id="total-followers">0</span></p>
+            <div class="switcher">
+                <p>Dark Mode</p>
+                <div class="switch"></div>
+            </div>
+        </header>
 
-<div class="followers">
-    <div class="card follower-card follower-facebook">
-        <p class="user-name">
-            <i class="fab fa-facebook-square"></i>
-            <span>$user-name</span>
-        </p>
-        <h2 class="follower-num">0</h2>
-        <h3>Followers</h3>
-        <p class="trend">
-            <i class="fas fa-caret-up"></i>
-            <span class="follower-num-today">0</span>
-            Today
-        </p>
-    </div>
-</div>
+        <div class="followers">
+            <div class="card follower-card follower-Card-facebook">
+                <p class="user-name">
+                        <i class="icon fab fa-facebook-square fa-2x"></i>
+                    <span>$user-name</span>
+                </p>
+                <h2 class="follower-num">0</h2>
+                <h3>Followers</h3>
+                <p class="trends">
+                    <i class="fas fa-caret-up"></i>
+                    <span class="follower-num-today">0</span>
+                    Today
+                </p>
+            </div>
+        </div>
 
-</main>   
+        <div class="overview">
+            <h2>Overview - Today</h2>
+            <div class="overview-facebook">
+                <div class="title-bar">
+                    <p class="title">
+                        Likes
+                    </p>
+                    <i class="icon fab fa-facebook-square fa-2x"></i>
+
+                </div>
+                <div class="stats">
+                    <p class="number">0</p>
+                    <p class="trends">
+                            <i class=" fas fa-caret-up"></i>
+                        <span class="percent">0</span>%
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
 </body>
 <script src="https://kit.fontawesome.com/782ac72c00.js" crossorigin="anonymous"></script>
+
 </html>
