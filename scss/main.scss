@@ -1,2 +1,38 @@
 @import 'config';
 
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+main {
+    margin: 2rem;
+}
+
+.switcher {
+    border-top: 1px solid gray;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    width: 6rem;
+    height: 3rem;
+    background-color: gray;
+    border-radius: 1.5rem;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background-color: white;
+        top: .5rem;
+        right: .5rem;
+        border-radius: 1.5rem;
+    }
+}
