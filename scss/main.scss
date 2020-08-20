@@ -1,5 +1,7 @@
 @import 'config';
 @import 'variables';
+@import 'placeholders';
+@import 'mixins';
 
 
 
@@ -11,6 +13,10 @@ body {
 
 main {
     margin: 2rem;
+}
+
+header {
+    margin-bottom: 2rem;
 }
 
 .switcher {
@@ -39,4 +45,13 @@ main {
         right: .5rem;
         border-radius: 1.5rem;
     }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.card {
+    @include card(gray);
+    margin-top: 2rem;
 }
