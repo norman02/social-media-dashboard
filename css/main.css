@@ -32,10 +32,6 @@
   text-transform: uppercase;
 }
 
-.overview-facebook .trends, .follower-Card-facebook .trends {
-  color: green;
-}
-
 .overview-facebook::before, .follower-Card-facebook::before {
   content: "";
   position: absolute;
@@ -134,6 +130,10 @@
 
 .follower-Card-facebook::before {
   background: blue;
+}
+
+.overview-facebook {
+  margin-top: 2rem;
 }
 
 .overview-facebook .icon {
