@@ -1,8 +1,12 @@
 @import 'config';
+@import 'variables';
+
+
 
 body {
     font-size: 1.6rem;
     line-height: 1.5;
+    background-color: $background-color;
 }
 
 main {
@@ -10,7 +14,7 @@ main {
 }
 
 .switcher {
-    border-top: 1px solid gray;
+    border-top: 1px solid $secondary-color;
     margin-top: 2rem;
     padding-top: 2rem;
     display: flex;
@@ -22,7 +26,7 @@ main {
     position: relative;
     width: 6rem;
     height: 3rem;
-    background-color: gray;
+    background-color: $switch-background-color;
     border-radius: 1.5rem;
 
     &::after {
@@ -30,7 +34,7 @@ main {
         position: absolute;
         width: 2rem;
         height: 2rem;
-        background-color: white;
+        background-color: $switch-color;
         top: .5rem;
         right: .5rem;
         border-radius: 1.5rem;
