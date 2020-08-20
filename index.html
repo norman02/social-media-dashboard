@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <title>Social Media Dashboard</title>
+    
 </head>
 
 <body>
@@ -23,20 +24,37 @@
             <div class="card follower-card follower-Card-facebook">
                 <p class="user-name">
                         <i class="icon fab fa-facebook-square fa-2x"></i>
-                    <span>$user-name</span>
+                    <span id="user">$user-name</span>
                 </p>
-                <h2 class="follower-num">0</h2>
+                <h2 id="facebook-followers" class="follower-num">0</h2>
                 <h3>Followers</h3>
-                <p class="trends">
+                <p id="facebook-folower-trend" class="trends">
                     <i class="fas fa-caret-up"></i>
-                    <span class="follower-num-today">0</span>
+                    <span id="facebook-follow-num" class="follower-num-today">0</span>
                     Today
                 </p>
             </div>
+            
         </div>
 
         <div class="overview">
             <h2>Overview - Today</h2>
+            <div class="overview-facebook">
+                <div class="title-bar">
+                    <p class="title">
+                        Page Views
+                    </p>
+                    <i class="icon fab fa-facebook-square fa-2x"></i>
+
+                </div>
+                <div class="stats">
+                    <p id="facebook-page-views" class="number">0</p>
+                    <p id="fb-view-trends" class="trends">
+                            <i class=" fas fa-caret-up"></i>
+                        <span id="fb-view-percent" class="percent">0</span>%
+                    </p>
+                </div>
+            </div>
             <div class="overview-facebook">
                 <div class="title-bar">
                     <p class="title">
@@ -46,17 +64,19 @@
 
                 </div>
                 <div class="stats">
-                    <p class="number">0</p>
-                    <p class="trends">
+                    <p id="fb-like-num" class="number">0</p>
+                    <p id="fb-like-trend"  class="trends">
                             <i class=" fas fa-caret-up"></i>
-                        <span class="percent">0</span>%
+                        <span id="fb-like-percent" class="percent">0</span>%
                     </p>
                 </div>
             </div>
         </div>
+        
 
     </main>
 </body>
 <script src="https://kit.fontawesome.com/782ac72c00.js" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 
 </html>
