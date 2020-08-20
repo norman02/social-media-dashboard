@@ -1,0 +1,6 @@
+@mixin card($color) {
+    @extend %cards;
+    &::before {
+        background-color: $color;
+    }
+}
