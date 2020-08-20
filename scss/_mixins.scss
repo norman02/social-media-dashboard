@@ -1,6 +1,16 @@
 @mixin card($color) {
     @extend %cards;
+    .icon {
+        color: $color;
+    }
     &::before {
-        background-color: $color;
+        background: $color;
+    }
+}
+
+@mixin overview ($color) {
+    @extend %overview-cards;
+    .icon {
+        color: $color;
     }
 }

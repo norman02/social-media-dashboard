@@ -10,7 +10,7 @@
           box-sizing: border-box;
 }
 
-.card {
+.overview-facebook, .follower-Card-facebook {
   position: relative;
   background-color: lightgray;
   text-align: center;
@@ -18,21 +18,25 @@
   border-radius: 1rem;
 }
 
-.card p {
+.overview-facebook p, .follower-Card-facebook p {
   line-height: 6;
   color: gray;
 }
 
-.card h2 {
+.overview-facebook h2, .follower-Card-facebook h2 {
   font-size: 6rem;
   line-height: 0.8;
 }
 
-.card h3 {
+.overview-facebook h3, .follower-Card-facebook h3 {
   text-transform: uppercase;
 }
 
-.card::before {
+.overview-facebook .trends, .follower-Card-facebook .trends {
+  color: green;
+}
+
+.overview-facebook::before, .follower-Card-facebook::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -44,18 +48,42 @@
   border-radius: 1rem 1rem 0 0;
 }
 
-body {
-  font-size: 1.6rem;
-  line-height: 1.5;
-  background-color: white;
+.overview-facebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-main {
-  margin: 2rem;
+.overview-facebook p {
+  line-height: 1;
 }
 
-header {
-  margin-bottom: 2rem;
+.overview-facebook .title-bar {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.overview-facebook .stats {
+  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.overview-facebook::before {
+  display: none;
 }
 
 .switcher {
@@ -96,11 +124,37 @@ header {
   cursor: pointer;
 }
 
-.card {
+.follower-Card-facebook {
   margin-top: 2rem;
 }
 
-.card::before {
-  background-color: gray;
+.follower-Card-facebook .icon {
+  color: blue;
+}
+
+.follower-Card-facebook::before {
+  background: blue;
+}
+
+.overview-facebook .icon {
+  color: blue;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: white;
+}
+
+main {
+  margin: 2rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.overview h2 {
+  margin: 2rem 0;
 }
 /*# sourceMappingURL=main.css.map */

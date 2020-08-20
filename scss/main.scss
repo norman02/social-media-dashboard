@@ -3,6 +3,9 @@
 @import 'placeholders';
 @import 'mixins';
 
+@import 'switch';
+@import 'cards';
+
 
 
 body {
@@ -19,39 +22,14 @@ header {
     margin-bottom: 2rem;
 }
 
-.switcher {
-    border-top: 1px solid $secondary-color;
-    margin-top: 2rem;
-    padding-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.switch {
-    position: relative;
-    width: 6rem;
-    height: 3rem;
-    background-color: $switch-background-color;
-    border-radius: 1.5rem;
 
-    &::after {
-        content: "";
-        position: absolute;
-        width: 2rem;
-        height: 2rem;
-        background-color: $switch-color;
-        top: .5rem;
-        right: .5rem;
-        border-radius: 1.5rem;
+
+
+
+
+.overview {
+    h2 {
+        margin: 2rem 0;
     }
-
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.card {
-    @include card(gray);
-    margin-top: 2rem;
 }
