@@ -22,3 +22,18 @@
     @include overview($facebook-blue);
     margin-top: 2rem;
 }
+
+.overview-twitter {
+    @include overview($twitter-blue);
+    margin-top: 2rem;
+}
+
+.overview-instagram {
+    @include overview($instagram-grad);
+    margin-top: 2rem;
+}
+
+.overview-youtube {
+    @include overview($youtube-red);
+    margin-top: 2rem;
+}
