@@ -65,10 +65,19 @@ const setTotalFollowers = () => {
     document.getElementById('total-followers').innerHTML = total;
 }
 
-// set page fields with facebook data
-const setFacebook = () => {
-
+// display facebook data
+const displayFacebook = () => {
+    document.getElementById('fb-user').innerHTML = facebook['username'];
+    document.getElementById('facebook-followers').innerHTML = facebook['followers']
+    document.getElementById('facebook-follower-trend').style.color = getTrendColor(facebook['followersToday'])
+    document.getElementById('facebook-follow-num').innerHTML = Math.abs(facebook['followersToday']) 
+    document.getElementById('facebook-page-views').innerHTML = facebook['views']
+    document.getElementById('fb-view-trends').style.color = getTrendColor(facebook['viewTrend'])
+    document.getElementById('fb-view-percent').innerHTML = Math.abs(facebook['viewTrend'])
+    document.getElementById('fb-like-num').innerHTML = facebook['likes']
+    document.getElementById('fb-like-trend').style.color = getTrendColor(facebook['likeTrend'])
+    document.getElementById('fb-like-percent').innerHTML = Math.abs(facebook['likeTrend'])
 }
 
 setTotalFollowers();
-setFacebook();
+displayFacebook();
