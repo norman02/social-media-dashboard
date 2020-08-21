@@ -10,7 +10,7 @@
           box-sizing: border-box;
 }
 
-.overview-facebook, .follower-Card-facebook {
+.overview-facebook, .follower-Card-facebook, .follower-Card-twitter, .follower-Card-instagram, .follower-Card-youtube {
   position: relative;
   background-color: lightgray;
   text-align: center;
@@ -18,21 +18,21 @@
   border-radius: 1rem;
 }
 
-.overview-facebook p, .follower-Card-facebook p {
+.overview-facebook p, .follower-Card-facebook p, .follower-Card-twitter p, .follower-Card-instagram p, .follower-Card-youtube p {
   line-height: 6;
   color: gray;
 }
 
-.overview-facebook h2, .follower-Card-facebook h2 {
+.overview-facebook h2, .follower-Card-facebook h2, .follower-Card-twitter h2, .follower-Card-instagram h2, .follower-Card-youtube h2 {
   font-size: 6rem;
   line-height: 0.8;
 }
 
-.overview-facebook h3, .follower-Card-facebook h3 {
+.overview-facebook h3, .follower-Card-facebook h3, .follower-Card-twitter h3, .follower-Card-instagram h3, .follower-Card-youtube h3 {
   text-transform: uppercase;
 }
 
-.overview-facebook::before, .follower-Card-facebook::before {
+.overview-facebook::before, .follower-Card-facebook::before, .follower-Card-twitter::before, .follower-Card-instagram::before, .follower-Card-youtube::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -130,6 +130,42 @@
 
 .follower-Card-facebook::before {
   background: blue;
+}
+
+.follower-Card-twitter {
+  margin-top: 2rem;
+}
+
+.follower-Card-twitter .icon {
+  color: lightblue;
+}
+
+.follower-Card-twitter::before {
+  background: lightblue;
+}
+
+.follower-Card-instagram {
+  margin-top: 2rem;
+}
+
+.follower-Card-instagram .icon {
+  color: pink;
+}
+
+.follower-Card-instagram::before {
+  background: pink;
+}
+
+.follower-Card-youtube {
+  margin-top: 2rem;
+}
+
+.follower-Card-youtube .icon {
+  color: red;
+}
+
+.follower-Card-youtube::before {
+  background: red;
 }
 
 .overview-facebook {
