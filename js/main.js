@@ -1,24 +1,57 @@
-const totalFollowers = document.getElementById('total-followers')
 
 
-const calculateTotal = () => {
-    total = "" + socials[0]['followers']
-    return total
+/* ====== Data ====== */
+
+// Data from facebook API
+const facebook =
+{
+    name: 'facebook',
+    username: '@nathanf',
+    followers: 1987,
+    followersToday: 12,
+    views: 87,
+    viewTrend: 3,
+    likes: 52,
+    likeTrend: -2,
 }
 
-const socials = [
-    {
-        name: 'facebook',
-        username: '@nathanf',
-        followers: 1987,
-        'new-followers': 12,
-        views: 87,
-        'view-trend': 3,
-        likes: 52,
-        'like-trend': -2,
-    }
-]
-const getTrendColor = (num)=> {
+//Data from twitter API
+const twitter = {
+    username: '@nathanf',
+    followers: 1044,
+    followersToday: 99,
+    retweets: 177,
+    retweetTrend: 303,
+    likes: 507,
+    likeTrend: 553
+}
+
+//Data from instagram API
+const instagram = {
+    username: '@realnathanf',
+    followers: 11000,
+    followersToday: 1099,
+    likes: 5462,
+    likeTrend: 2257,
+    views: 52000,
+    viewTrend: 1375,
+}
+
+//Data from youtube API
+const youtube = {
+    username: 'Nathan F.',
+    followers: 8239,
+    followersToday: -144,
+    likes: 107,
+    likeTrend: -19,
+    views: 1407,
+    viewTrend: -12,
+}
+
+/* ====== Functions ======= */
+
+// set color: green (positive), red (negative)
+const getTrendColor = (num) => {
     if (num > 0) {
         return '#1eb589'
     } else {
@@ -26,27 +59,25 @@ const getTrendColor = (num)=> {
     }
 }
 
-const getFacebook = () => {
-    const followTrend = socials[0]['new-followers']
-    const viewTrend = socials[0]['view-trend'];
-    const likeTrend = socials[0]['like-trend']
-    document.getElementById('user').innerHTML = socials[0]['username']
-    document.getElementById('facebook-followers').innerHTML = socials[0]['followers']
-    document.getElementById('facebook-folower-trend').style.color = getTrendColor(followTrend)
-    document.getElementById('facebook-follow-num').innerHTML = followTrend;
-    document.getElementById('facebook-page-views').innerHTML = socials[0]['views']  
-    document.getElementById('fb-view-trends').style.color = getTrendColor(viewTrend);
-    document.getElementById('fb-view-percent').innerHTML =
-    viewTrend;
-    document.getElementById('fb-like-num').innerHTML =
-    socials[0]['likes'];
-    document.getElementById('fb-like-trend').style.color = getTrendColor(likeTrend);
-    document.getElementById('fb-like-percent').innerHTML = likeTrend;
+// calculate total followers for all media
+const setTotalFollowers = () => {
+    total = "" + facebook['followers']
+    document.getElementById('total-followers').innerHTML = total;
 }
 
-const populateFields = () => {
-    totalFollowers.innerHTML = calculateTotal()
-    getFacebook()
+// display facebook data
+const displayFacebook = () => {
+    document.getElementById('fb-user').innerHTML = facebook['username'];
+    document.getElementById('facebook-followers').innerHTML = facebook['followers']
+    document.getElementById('facebook-follower-trend').style.color = getTrendColor(facebook['followersToday'])
+    document.getElementById('facebook-follow-num').innerHTML = Math.abs(facebook['followersToday']) 
+    document.getElementById('facebook-page-views').innerHTML = facebook['views']
+    document.getElementById('fb-view-trends').style.color = getTrendColor(facebook['viewTrend'])
+    document.getElementById('fb-view-percent').innerHTML = Math.abs(facebook['viewTrend'])
+    document.getElementById('fb-like-num').innerHTML = facebook['likes']
+    document.getElementById('fb-like-trend').style.color = getTrendColor(facebook['likeTrend'])
+    document.getElementById('fb-like-percent').innerHTML = Math.abs(facebook['likeTrend'])
 }
 
-populateFields()
+setTotalFollowers();
+displayFacebook();
