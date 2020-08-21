@@ -3,7 +3,37 @@
     margin-top: 2rem;
 }
 
+.follower-Card-twitter{
+    @include card($twitter-blue);
+    margin-top: 2rem;
+}
+
+.follower-Card-instagram{
+    @include card($instagram-grad);
+    margin-top: 2rem;
+}
+
+.follower-Card-youtube{
+    @include card($youtube-red);
+    margin-top: 2rem;
+}
+
 .overview-facebook {
     @include overview($facebook-blue);
+    margin-top: 2rem;
+}
+
+.overview-twitter {
+    @include overview($twitter-blue);
+    margin-top: 2rem;
+}
+
+.overview-instagram {
+    @include overview($instagram-grad);
+    margin-top: 2rem;
+}
+
+.overview-youtube {
+    @include overview($youtube-red);
     margin-top: 2rem;
 }
