@@ -59,22 +59,20 @@ const getTrendColor = (num) => {
     }
 }
 
-// set carrot: up (positive), down (negative)
+
 const setCarrot = (num, carrot) => {
     elem = document.getElementById(carrot)
     if (num > 0) {
-        elem.classList.add('fa-caret-up') 
-        elem.classList.remove('fa-caret-down')
+        elem.classList.add('fa-caret-up')     
     } 
-    else {
-        elem.classList.remove('fa-caret-up') 
+    else {      
         elem.classList.add('fa-caret-down')
     }
 }
 
 // calculate total followers for all media
 const setTotalFollowers = () => {
-    total = "" + facebook['followers']
+    total =  facebook['followers'] + twitter['followers'] + instagram['followers'] + youtube['followers']
     document.getElementById('total-followers').innerHTML = total;
 }
 
@@ -115,15 +113,110 @@ const displayFacebook = () => {
     secondaryCount.innerHTML = countSecondary
     secondaryTrend.style.color = getTrendColor(trendSecondary)
     secondaryTrendField.innerHTML = Math.abs(trendSecondary)
-    setCarrot(secondaryTrend,secondaryCaret)
+    setCarrot(trendSecondary,secondaryCaret)
 
     // Set fields for tertiary card
     tertiaryCount.innerHTML = countTertiary
     tertiaryTrend.style.color = getTrendColor(trendTertiary)
     tertiaryTrendField.innerHTML = Math.abs(trendTertiary)
-    setCarrot(tertiaryTrend,  tertiaryCaret)
+    setCarrot(trendTertiary,  tertiaryCaret)
+    
+}
+
+// display twitter data
+const displayTwitter = () => {
+    // Page fields
+    const userField = document.getElementById('twitter-user')
+    const followerField = document.getElementById('twitter-followers')
+    const mainTrend = document.getElementById('twitter-follower-trend')
+    const mainTrendField = 'twitter-follower-num'
+    const mainTrendCaret = 'twitter-follower-trend-caret'
+    const secondaryCount = document.getElementById('twitter-retweets')
+    const secondaryTrend = document.getElementById('twitter-retweet-trends')
+    const secondaryTrendField = document.getElementById('twitter-retweet-percent')
+    const secondaryCaret = "twitter-retweet-caret"
+    const tertiaryCount = document.getElementById('twitter-likes')
+    const tertiaryTrend = document.getElementById('twitter-like-trend')
+    const tertiaryTrendField =document.getElementById('twitter-like-percent')
+    const tertiaryCaret = 'twitter-like-carrot' 
+
+    // Data values
+    let user = twitter['username']
+    let followers = twitter['followers']
+    let todayFollow = twitter['followersToday']
+    let countSecondary = twitter['retweets']
+    let trendSecondary = twitter['retweetTrend']
+    let countTertiary = twitter['likes']
+    let trendTertiary = twitter['likeTrend']
+
+    // Set for primary card
+    userField.innerHTML = user
+    followerField.innerHTML = followers
+    mainTrend.style.color = getTrendColor(todayFollow)
+    setCarrot(todayFollow, mainTrendCaret)
+    document.getElementById(mainTrendField).innerHTML = Math.abs(todayFollow)
+    
+    // Set fields secondary card
+    secondaryCount.innerHTML = countSecondary
+    secondaryTrend.style.color = getTrendColor(trendSecondary)
+    secondaryTrendField.innerHTML = Math.abs(trendSecondary)
+    setCarrot(trendSecondary ,secondaryCaret)
+
+    // Set fields for tertiary card
+    tertiaryCount.innerHTML = countTertiary
+    tertiaryTrend.style.color = getTrendColor(trendTertiary)
+    tertiaryTrendField.innerHTML = Math.abs(trendTertiary)
+    setCarrot(trendTertiary,  tertiaryCaret)
+    
+}
+// display instagram data 
+const displayInstagram = () => {
+    // Page fields
+    const userField = document.getElementById('insta-user')
+    const followerField = document.getElementById('instagram-followers')
+    const mainTrend = document.getElementById('instagram-folower-trend')
+    const mainTrendField = 'instagram-follow-num'
+    const mainTrendCaret = 'insta-caret'
+    const secondaryCount = document.getElementById('insta-likes')
+    const secondaryTrend = document.getElementById('insta-like-trends')
+    const secondaryTrendField = document.getElementById('insta-like-percent')
+    const secondaryCaret = "insta-like-caret"
+    const tertiaryCount = document.getElementById('insta-views')
+    const tertiaryTrend = document.getElementById('insta-view-trend')
+    const tertiaryTrendField =document.getElementById('insta-view-percent')
+    const tertiaryCaret = 'insta-view-carrot' 
+
+    // Data values
+    let user = instagram['username']
+    let followers = instagram['followers']
+    let todayFollow = instagram['followersToday']
+    let countSecondary = instagram['likes']
+    let trendSecondary = instagram['likeTrend']
+    let countTertiary = instagram['views']
+    let trendTertiary = instagram['viewTrend']
+
+    // Set for primary card
+    userField.innerHTML = user
+    followerField.innerHTML = followers
+    mainTrend.style.color = getTrendColor(todayFollow)
+    setCarrot(todayFollow, mainTrendCaret)
+    document.getElementById(mainTrendField).innerHTML = Math.abs(todayFollow)
+    
+    // Set fields secondary card
+    secondaryCount.innerHTML = countSecondary
+    secondaryTrend.style.color = getTrendColor(trendSecondary)
+    secondaryTrendField.innerHTML = Math.abs(trendSecondary)
+    setCarrot(trendSecondary ,secondaryCaret)
+
+    // Set fields for tertiary card
+    tertiaryCount.innerHTML = countTertiary
+    tertiaryTrend.style.color = getTrendColor(trendTertiary)
+    tertiaryTrendField.innerHTML = Math.abs(trendTertiary)
+    setCarrot(trendTertiary,  tertiaryCaret)
     
 }
 
 setTotalFollowers();
 displayFacebook();
+displayTwitter()
+displayInstagram()
