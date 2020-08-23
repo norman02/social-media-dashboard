@@ -216,7 +216,55 @@ const displayInstagram = () => {
     
 }
 
+// display youtube data 
+const dsiplayYoutube = () => {
+    // Page fields
+    const userField = document.getElementById('yt-user')
+    const followerField = document.getElementById('youtube-followers')
+    const mainTrend = document.getElementById('youtube-folower-trend')
+    const mainTrendField = 'youtube-follow-num'
+    const mainTrendCaret = 'yt-caret'
+    const secondaryCount = document.getElementById('yt-likes')
+    const secondaryTrend = document.getElementById('yt-like-trend')
+    const secondaryTrendField = document.getElementById('yt-like-percent')
+    const secondaryCaret = "yt-like-caret"
+    const tertiaryCount = document.getElementById('yt-view-num')
+    const tertiaryTrend = document.getElementById('yt-view-trend')
+    const tertiaryTrendField =document.getElementById('yt-view-percent')
+    const tertiaryCaret = 'yt-view-carrot' 
+
+    // Data values
+    let user = youtube['username']
+    let followers = youtube['followers']
+    let todayFollow = youtube['followersToday']
+    let countSecondary = youtube['likes']
+    let trendSecondary = youtube['likeTrend']
+    let countTertiary = youtube['views']
+    let trendTertiary = youtube['viewTrend']
+
+    // Set for primary card
+    userField.innerHTML = user
+    followerField.innerHTML = followers
+    mainTrend.style.color = getTrendColor(todayFollow)
+    setCarrot(todayFollow, mainTrendCaret)
+    document.getElementById(mainTrendField).innerHTML = Math.abs(todayFollow)
+    
+    // Set fields secondary card
+    secondaryCount.innerHTML = countSecondary
+    secondaryTrend.style.color = getTrendColor(trendSecondary)
+    secondaryTrendField.innerHTML = Math.abs(trendSecondary)
+    setCarrot(trendSecondary ,secondaryCaret)
+
+    // Set fields for tertiary card
+    tertiaryCount.innerHTML = countTertiary
+    tertiaryTrend.style.color = getTrendColor(trendTertiary)
+    tertiaryTrendField.innerHTML = Math.abs(trendTertiary)
+    setCarrot(trendTertiary,  tertiaryCaret)
+    
+}
+
 setTotalFollowers();
 displayFacebook();
 displayTwitter()
 displayInstagram()
+dsiplayYoutube()
