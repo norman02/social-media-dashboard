@@ -20,7 +20,7 @@ const twitter = {
     username: '@nathanf',
     followers: 1044,
     followersToday: 99,
-    retweets: 177,
+    retweets: 117,
     retweetTrend: 303,
     likes: 507,
     likeTrend: 553
@@ -29,7 +29,7 @@ const twitter = {
 //Data from instagram API
 const instagram = {
     username: '@realnathanf',
-    followers: 11000,
+    followers: 11734,
     followersToday: 1099,
     likes: 5462,
     likeTrend: 2257,
