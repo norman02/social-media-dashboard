@@ -8,12 +8,16 @@
 
 
 body {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     font-family: $Inter;
     font-weight: 400;
     background-color: $background-color;
     color: $secondary-color;
+}
+
+h1 {
+    font-size: 2.4rem;
 }
 
 h1, h2 {

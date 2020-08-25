@@ -22,17 +22,28 @@
 .overview-facebook p, .overview-twitter p, .overview-instagram p, .overview-youtube p, .follower-Card-facebook p, .follower-Card-twitter p, .follower-Card-instagram p, .follower-Card-youtube p {
   line-height: 6;
   color: #63687D;
+  font-size: 1.2rem;
 }
 
 .overview-facebook h2, .overview-twitter h2, .overview-instagram h2, .overview-youtube h2, .follower-Card-facebook h2, .follower-Card-twitter h2, .follower-Card-instagram h2, .follower-Card-youtube h2 {
-  font-size: 6rem;
+  font-size: 5.6rem;
   line-height: 0.8;
 }
 
 .overview-facebook h3, .overview-twitter h3, .overview-instagram h3, .overview-youtube h3, .follower-Card-facebook h3, .follower-Card-twitter h3, .follower-Card-instagram h3, .follower-Card-youtube h3 {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
+  font-size: 1.2rem;
   line-height: 2.5;
+}
+
+.overview-facebook .icon, .overview-twitter .icon, .overview-instagram .icon, .overview-youtube .icon, .follower-Card-facebook .icon, .follower-Card-twitter .icon, .follower-Card-instagram .icon, .follower-Card-youtube .icon {
+  vertical-align: text-top;
+  margin-right: 0.6rem;
+}
+
+.overview-facebook .trends i, .overview-twitter .trends i, .overview-instagram .trends i, .overview-youtube .trends i, .follower-Card-facebook .trends i, .follower-Card-twitter .trends i, .follower-Card-instagram .trends i, .follower-Card-youtube .trends i {
+  vertical-align: text-bottom;
 }
 
 .overview-facebook::before, .overview-twitter::before, .overview-instagram::before, .overview-youtube::before, .follower-Card-facebook::before, .follower-Card-twitter::before, .follower-Card-instagram::before, .follower-Card-youtube::before {
@@ -71,6 +82,10 @@
           justify-content: space-between;
 }
 
+.overview-facebook .title-bar p, .overview-twitter .title-bar p, .overview-instagram .title-bar p, .overview-youtube .title-bar p {
+  font-size: 1.4rem;
+}
+
 .overview-facebook .stats, .overview-twitter .stats, .overview-instagram .stats, .overview-youtube .stats {
   margin: 2rem 0;
   display: -webkit-box;
@@ -79,6 +94,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.overview-facebook .number, .overview-twitter .number, .overview-instagram .number, .overview-youtube .number {
+  font-weight: 700;
+  font-size: 3.2rem;
 }
 
 .overview-facebook::before, .overview-twitter::before, .overview-instagram::before, .overview-youtube::before {
@@ -214,12 +237,16 @@
 }
 
 body {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   font-family: "Inter", sans-serif;
   font-weight: 400;
   background-color: white;
   color: #63687D;
+}
+
+h1 {
+  font-size: 2.4rem;
 }
 
 h1, h2 {
