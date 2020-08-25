@@ -1,4 +1,5 @@
 /* ======== reset CSS ========= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 :root {
   font-size: 10px;
 }
@@ -20,7 +21,7 @@
 
 .overview-facebook p, .overview-twitter p, .overview-instagram p, .overview-youtube p, .follower-Card-facebook p, .follower-Card-twitter p, .follower-Card-instagram p, .follower-Card-youtube p {
   line-height: 6;
-  color: gray;
+  color: #63687D;
 }
 
 .overview-facebook h2, .overview-twitter h2, .overview-instagram h2, .overview-youtube h2, .follower-Card-facebook h2, .follower-Card-twitter h2, .follower-Card-instagram h2, .follower-Card-youtube h2 {
@@ -83,7 +84,7 @@
 }
 
 .switcher {
-  border-top: 1px solid gray;
+  border-top: 1px solid #63687D;
   margin-top: 2rem;
   padding-top: 2rem;
   display: -webkit-box;
@@ -101,7 +102,7 @@
   position: relative;
   width: 6rem;
   height: 3rem;
-  background-color: gray;
+  background-color: #AEB3CB;
   border-radius: 1.5rem;
 }
 
@@ -110,7 +111,7 @@
   position: absolute;
   width: 2rem;
   height: 2rem;
-  background-color: white;
+  background-color: #F1F3FA;
   top: .5rem;
   right: .5rem;
   border-radius: 1.5rem;
@@ -203,7 +204,15 @@
 body {
   font-size: 1.6rem;
   line-height: 1.5;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   background-color: white;
+  color: #63687D;
+}
+
+h1, h2 {
+  color: #1D1F29;
+  font-weight: 700;
 }
 
 main {

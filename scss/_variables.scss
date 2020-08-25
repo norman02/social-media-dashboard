@@ -1,5 +1,9 @@
-$primary-color: black;
-$secondary-color: gray;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+
+// Colors
+$primary-color: #1D1F29;
+$secondary-color: #63687D;
 $background-color: white;
 $card-background-color: lightgray;
 
@@ -9,6 +13,8 @@ $instagram-grad: pink;
 $youtube-red: red;
 $green: green;
 
-$switch-color: $background-color;
-$switch-background-color: $secondary-color;
+$switch-color: #F1F3FA;
+$switch-background-color: #AEB3CB;
 
+// Fonts
+$Inter: 'Inter', sans-serif;

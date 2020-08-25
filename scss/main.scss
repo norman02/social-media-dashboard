@@ -2,7 +2,6 @@
 @import 'variables';
 @import 'placeholders';
 @import 'mixins';
-
 @import 'switch';
 @import 'cards';
 
@@ -11,7 +10,15 @@
 body {
     font-size: 1.6rem;
     line-height: 1.5;
+    font-family: $Inter;
+    font-weight: 400;
     background-color: $background-color;
+    color: $secondary-color;
+}
+
+h1, h2 {
+    color: $primary-color;
+    font-weight: 700;
 }
 
 main {
@@ -21,12 +28,6 @@ main {
 header {
     margin-bottom: 2rem;
 }
-
-
-
-
-
-
 
 .overview {
     h2 {
