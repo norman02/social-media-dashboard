@@ -20,6 +20,7 @@
         width: 2rem;
         height: 2rem;
         background-color: $switch-color;
+        background: $switch-grad;
         top: .5rem;
         right: .5rem;
         border-radius: 1.5rem;
@@ -27,5 +28,6 @@
 
     &:hover {
         cursor: pointer;
+        background: $switch-grad;
     }
 }

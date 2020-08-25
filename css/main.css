@@ -137,6 +137,7 @@
   width: 2rem;
   height: 2rem;
   background-color: #F1F3FA;
+  background: linear-gradeient(45deg, #388FE7, #40DB82);
   top: .5rem;
   right: .5rem;
   border-radius: 1.5rem;
@@ -144,6 +145,7 @@
 
 .switch:hover {
   cursor: pointer;
+  background: linear-gradeient(45deg, #388FE7, #40DB82);
 }
 
 .follower-Card-facebook {
