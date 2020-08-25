@@ -13,7 +13,7 @@
 
 .overview-facebook, .overview-twitter, .overview-instagram, .overview-youtube, .follower-Card-facebook, .follower-Card-twitter, .follower-Card-instagram, .follower-Card-youtube {
   position: relative;
-  background-color: lightgray;
+  background-color: #F1F3FA;
   text-align: center;
   padding: 2rem;
   border-radius: 1rem;
@@ -31,6 +31,8 @@
 
 .overview-facebook h3, .overview-twitter h3, .overview-instagram h3, .overview-youtube h3, .follower-Card-facebook h3, .follower-Card-twitter h3, .follower-Card-instagram h3, .follower-Card-youtube h3 {
   text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 2.5;
 }
 
 .overview-facebook::before, .overview-twitter::before, .overview-instagram::before, .overview-youtube::before, .follower-Card-facebook::before, .follower-Card-twitter::before, .follower-Card-instagram::before, .follower-Card-youtube::before {
@@ -126,11 +128,11 @@
 }
 
 .follower-Card-facebook .icon {
-  color: blue;
+  color: #0580EC;
 }
 
 .follower-Card-facebook::before {
-  background: blue;
+  background: #0580EC;
 }
 
 .follower-Card-twitter {
@@ -138,11 +140,11 @@
 }
 
 .follower-Card-twitter .icon {
-  color: lightblue;
+  color: #1A91DA;
 }
 
 .follower-Card-twitter::before {
-  background: lightblue;
+  background: #1A91DA;
 }
 
 .follower-Card-instagram {
@@ -150,11 +152,16 @@
 }
 
 .follower-Card-instagram .icon {
-  color: pink;
+  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
 
 .follower-Card-instagram::before {
-  background: pink;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.follower-Card-instagram .icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #F1F3FA;
 }
 
 .follower-Card-youtube {
@@ -162,11 +169,11 @@
 }
 
 .follower-Card-youtube .icon {
-  color: red;
+  color: #FF0000;
 }
 
 .follower-Card-youtube::before {
-  background: red;
+  background: #FF0000;
 }
 
 .overview-facebook {
@@ -174,7 +181,7 @@
 }
 
 .overview-facebook .icon {
-  color: blue;
+  color: #0580EC;
 }
 
 .overview-twitter {
@@ -182,7 +189,7 @@
 }
 
 .overview-twitter .icon {
-  color: lightblue;
+  color: #1A91DA;
 }
 
 .overview-instagram {
@@ -190,7 +197,12 @@
 }
 
 .overview-instagram .icon {
-  color: pink;
+  color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.overview-instagram .icon {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  color: #F1F3FA;
 }
 
 .overview-youtube {
@@ -198,7 +210,7 @@
 }
 
 .overview-youtube .icon {
-  color: red;
+  color: #FF0000;
 }
 
 body {

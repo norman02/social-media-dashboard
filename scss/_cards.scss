@@ -10,6 +10,10 @@
 
 .follower-Card-instagram{
     @include card($instagram-grad);
+    .icon {
+        background: $instagram-grad;
+        color: $card-background-color;
+    }
     margin-top: 2rem;
 }
 
@@ -25,12 +29,16 @@
 
 .overview-twitter {
     @include overview($twitter-blue);
-    margin-top: 2rem;
+    margin-top: 2rem;   
 }
 
 .overview-instagram {
     @include overview($instagram-grad);
     margin-top: 2rem;
+    .icon {
+        background: $instagram-grad;
+        color: $card-background-color;
+    }
 }
 
 .overview-youtube {
