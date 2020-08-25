@@ -8,15 +8,27 @@
     p {
         line-height: 6;
         color: $secondary-color;
+        font-size: 1.2rem;
     }
 
     h2 {
-        font-size: 6rem;
+        font-size: 5.6rem;
         line-height: 0.8;
     }
 
     h3 {
         text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        font-size: 1.2rem;
+        line-height: 2.5;
+    }
+
+    .icon {
+        vertical-align: text-top;
+        margin-right: 0.6rem;
+    }
+    .trends i {
+        vertical-align: text-bottom;
     }
 
     &::before {
@@ -45,12 +57,22 @@
         margin: 2rem 0;
         display: flex;
         justify-content: space-between;
+
+        p {
+            font-size: 1.4rem;
+        }
     }
 
     .stats {
         margin: 2rem 0;
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
+    }
+
+    .number {
+        font-weight: 700;
+        font-size: 3.2rem;
     }
 
     &::before {
