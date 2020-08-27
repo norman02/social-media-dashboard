@@ -286,4 +286,12 @@ header {
 .dark .card {
   background-color: #252B42;
 }
+
+.dark .switch {
+  background: linear-gradient(45deg, #388FE7, #40DB82);
+}
+
+.dark .switch::after {
+  background: #252B42;
+}
 /*# sourceMappingURL=main.css.map */

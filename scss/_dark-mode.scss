@@ -13,4 +13,11 @@
     .card {
         background-color: $card-background-dark;
     }
+
+    .switch {
+        background: $switch-bg-dark;
+        &::after {
+            background: $switch-dark;
+        }
+    }
 }
