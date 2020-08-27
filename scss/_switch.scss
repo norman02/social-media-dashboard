@@ -11,7 +11,7 @@
     position: relative;
     width: 6rem;
     height: 3rem;
-    background-color: $switch-background-color;
+    background: $switch-background-color;
     border-radius: 1.5rem;
 
     &::after {
@@ -25,7 +25,15 @@
         border-radius: 1.5rem;
     }
 
+
     &:hover {
         cursor: pointer;
+        background: $switch-grad;
     }
+
+
+}
+
+.switched::after {
+    left: 0.5rem;
 }

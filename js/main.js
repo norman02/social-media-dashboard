@@ -59,7 +59,7 @@ const getTrendColor = (num) => {
     }
 }
 
-
+// set caret: up (positive), down (negative)
 const setCarrot = (num, carrot) => {
     elem = document.getElementById(carrot)
     if (num > 0) {
@@ -262,6 +262,27 @@ const dsiplayYoutube = () => {
     setCarrot(trendTertiary,  tertiaryCaret)
     
 }
+
+// switch dark mode and light mode
+let switched = false
+const switching = () => {
+    const theSwitch = document.getElementById('switch')
+    if (switched) {
+        theSwitch.classList.add('switched')
+        switched = false
+        document.getElementById('main').classList.add('dark')
+    } else {
+        theSwitch.classList.remove('switched')
+        switched = true
+        
+        document.getElementById('main').classList.remove('dark')
+    }
+}
+
+document.getElementById('switch').addEventListener( 'click', (e) => {
+    e.preventDefault()
+    switching()
+})
 
 setTotalFollowers();
 displayFacebook();

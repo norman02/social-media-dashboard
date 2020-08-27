@@ -1,19 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 
-// Colors
+// Colors light mode
 $primary-color: #1D1F29;
 $secondary-color: #63687D;
 $background-color: white;
 $card-background-color: #F1F3FA;
+$switch-color: #F1F3FA;
+$switch-background-color: #AEB3CB;
+$switch-grad: linear-gradient(45deg, #388FE7, #40DB82);
 
+// Colors Dark mode
+$primary-dark: #fff;
+$secondary-dark: #8C98C6;
+$background-dark: #20222F;
+$card-background-dark: #252B42;
+$switch-dark: $card-background-dark;
+$switch-bg-dark: $switch-grad;
+
+
+//Temp Test
+// $primary-color: $primary-dark;
+// $background-color: $background-dark;
+// $secondary-color: $secondary-dark;
+// $card-background-color: $card-background-dark;
+// $switch-color: $switch-dark;
+// $switch-background-color: $switch-bg-dark;
+
+
+// Colors Consistent
 $facebook-blue: #0580EC;
 $twitter-blue: #1A91DA;
 $instagram-grad: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 $youtube-red:#FF0000;
 
-$switch-color: #F1F3FA;
-$switch-background-color: #AEB3CB;
+
+
 
 // Fonts
 $Inter: 'Inter', sans-serif;
