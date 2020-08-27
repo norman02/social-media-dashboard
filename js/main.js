@@ -270,9 +270,12 @@ const switching = () => {
     if (switched) {
         theSwitch.classList.add('switched')
         switched = false
+        document.getElementById('main').classList.add('dark')
     } else {
         theSwitch.classList.remove('switched')
         switched = true
+        
+        document.getElementById('main').classList.remove('dark')
     }
 }
 

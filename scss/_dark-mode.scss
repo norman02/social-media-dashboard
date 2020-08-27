@@ -1,0 +1,16 @@
+.dark {
+
+    background-color: $background-dark;
+
+    h1, h2 {
+        color: $primary-dark;
+    }
+
+    p {
+        color: $secondary-dark;
+    }
+
+    .card {
+        background-color: $card-background-dark;
+    }
+}
