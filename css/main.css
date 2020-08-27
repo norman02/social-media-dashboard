@@ -147,6 +147,10 @@
   background: linear-gradient(45deg, #388FE7, #40DB82);
 }
 
+.switched::after {
+  left: 0.5rem;
+}
+
 .follower-Card-facebook {
   margin-top: 2rem;
 }
