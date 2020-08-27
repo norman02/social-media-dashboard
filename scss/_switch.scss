@@ -11,7 +11,7 @@
     position: relative;
     width: 6rem;
     height: 3rem;
-    background-color: $switch-background-color;
+    background: $switch-background-color;
     border-radius: 1.5rem;
 
     &::after {
@@ -20,7 +20,6 @@
         width: 2rem;
         height: 2rem;
         background-color: $switch-color;
-        background: $switch-grad;
         top: .5rem;
         right: .5rem;
         border-radius: 1.5rem;
