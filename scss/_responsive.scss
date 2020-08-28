@@ -1,3 +1,11 @@
 @include media-md {
-    
+    .main-cards, .secondary-cards {
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include media-lg {
+    .main-cards, .secondary-cards {
+       grid-template-columns: repeat(4, 1fr);
+    }
 }

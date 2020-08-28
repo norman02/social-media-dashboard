@@ -238,8 +238,6 @@ header {
 .main-cards, .secondary-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
   grid-gap: 2rem;
 }
 
@@ -269,5 +267,19 @@ header {
 
 .dark .switch::after {
   background: #252B42;
+}
+
+@media screen and (min-width: 768px) {
+  .main-cards, .secondary-cards {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-cards, .secondary-cards {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
 }
 /*# sourceMappingURL=main.css.map */
