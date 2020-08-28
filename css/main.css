@@ -277,9 +277,13 @@ header {
 }
 
 @media screen and (min-width: 1024px) {
+  h1, h2 {
+    font-size: 2.8rem;
+  }
   .main-cards, .secondary-cards {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    grid-gap: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
