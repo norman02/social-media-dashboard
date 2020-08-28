@@ -22,10 +22,13 @@ main {
     
 }
 
-
-
 header {
     margin-bottom: 2rem;
+}
+
+.main-cards, .secondary-cards {
+    display: grid;
+    grid-gap: 2rem;
 }
 
 .overview {
@@ -33,3 +36,4 @@ header {
         margin: 2rem 0;
     }
 }
+
